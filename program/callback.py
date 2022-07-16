@@ -43,7 +43,7 @@ async def cbstart(_, query: CallbackQuery):
                         "🎙جــروب الــدعـم🎙", url=f"https://t.me/{GROUP_SUPPORT}"
                     ),
                     InlineKeyboardButton(
-                        "𝐒𝐎𝐔𝐑𝐂𝐄🌀", url=f"https://t.me/EITHON1"
+                        "𝐒𝐎𝐔𝐑𝐂𝐄", url=f"https://t.me/IIlAndylII"
                     ),
                 ],
                 [
@@ -60,7 +60,7 @@ async def cbstart(_, query: CallbackQuery):
 @Client.on_callback_query(filters.regex("cbhowtouse"))
 async def cbguides(_, query: CallbackQuery):
     await query.edit_message_text(
-        f""" الدليل الأساسي لاستخدام هذا البوت:
+        f""" الدليل الأساسي لاستخدام بوت اندي:
 
  1 ↤ أولاً ، أضفني إلى مجموعتك
  2 ↤ بعد ذلك ، قم بترقيتي كمشرف ومنح جميع الصلاحيات باستثناء الوضع الخفي
@@ -72,7 +72,7 @@ async def cbguides(_, query: CallbackQuery):
 
  💡 إذا كانت لديك أسئلة  حول هذا البوت ، فيمكنك إخبارنا منن خلال قروب الدعم الخاصة بي هنا ↤ @{GROUP_SUPPORT}
 
- ⚡ 🌀قناة البوت @EITHON1
+ ⚡ 🎗قناة البوت @oyurl
 __""",
         reply_markup=InlineKeyboardMarkup(
             [[InlineKeyboardButton("🔙 رجوع", callback_data="cbstart")]]
@@ -87,7 +87,7 @@ async def cbcmds(_, query: CallbackQuery):
 
 » **⇦قم بالضغط علي الزر الذي تريده لمعرفه الاوامر لكل فئه منهم !**
 
-⚡ __قناة البوت»  @EITHON1  __""",
+⚡ __قناة البوت»  @oyurl  __""",
         reply_markup=InlineKeyboardMarkup(
             [
                 [
@@ -154,7 +154,7 @@ async def cbsudo(_, query: CallbackQuery):
 » /rmd  » او «تنظيف- clean all downloaded files
 » /sysinfo»او «معلومات- show the system information
 » /update»او «ترقيه - update your bot to latest version
-» /restart «او «تنصيب - restart your bot
+» /restart «او «اعاده التشغيل - restart your bot
 » /leaveall»او «غادرالجميع - order userbot to leave from all group
 
  ⚡ 🌀قناة البوت @{UPDATES_CHANNEL}
@@ -203,7 +203,7 @@ async def cbbasic(_, query: CallbackQuery):
 ⇦ ✪『  تنصيب 』✪➢ ☆ لاعاده التشغيل من هيركو
 ⇦ ✪『  غادرالجميع 』✪➢ ☆ لمغادره الحساب المساعد لجميع الدردشات
 ━━━━━━━━━━━━━━
- ⚡ ??قناة البوت @{UPDATES_CHANNEL}
+ ⚡ قناة البوت @{UPDATES_CHANNEL}
 __""",
         reply_markup=InlineKeyboardMarkup(
             [[InlineKeyboardButton("🔙رجوع", callback_data="cbcmds")]]
